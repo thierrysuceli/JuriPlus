@@ -1,0 +1,45 @@
+{
+  "name": "juriplus-backend",
+  "version": "1.0.0",
+  "description": "Backend API para JuriPlus - Sistema de Gestão Jurídica",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "setup": "node src/setup/setup-database.js",
+    "setup-postgres": "node src/setup/database.js",
+    "seed": "node src/setup/seed.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "juridico",
+    "crm",
+    "api",
+    "node",
+    "express"
+  ],
+  "author": "JuriPlus Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.1",
+    "helmet": "^7.0.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
